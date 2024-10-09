@@ -20,6 +20,7 @@ export class StandardBio { /* ... */ }
 
 @Component({
   ...,
+  imports: [NgComponentOutlet],
   template: `
     <p>Profile for {{user.name}}</p>
     <ng-container *ngComponentOutlet="getBioComponent()" /> `
